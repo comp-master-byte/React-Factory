@@ -31,6 +31,10 @@ body {
     border-radius: 4px;
   }
 }
+
+body.body {
+  overflow: hidden;
+}
 // === / Common ===
 
 // === Variables ===
@@ -62,6 +66,7 @@ $fw-dark: 900;
   height: 115px;
   width: 100%;
   background-color: #fff;
+  z-index: 100;
   &-content {
     display: flex;
     justify-content: space-between;

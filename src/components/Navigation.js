@@ -6,10 +6,12 @@ export const Navigation = () => {
 
     function showNavigation() {
         document.querySelector('.header-content--navigation').classList.toggle('show')
+        document.querySelector('body').classList.toggle('body')
     }
 
     function removeToggle() {
         document.querySelector('.header-content--navigation').classList.remove('show')
+        document.querySelector('body').classList.remove('body')
     }
 
     return (
