@@ -17,6 +17,7 @@ export const News = () => {
                     </div>
                 </div>
                 <div className="news-content--image">
+                    <img src={Images[2].image} alt="" />
                     <img src={Images[1].image} alt="" />
                 </div>
             </div>

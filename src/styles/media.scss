@@ -5,6 +5,40 @@
 }
 
 @media (max-width: 960px) {
+  div.about-content {
+    margin-top: -30px;
+    text-align: center;
+  }
+  div.about-content--title__image {
+    margin-bottom: 25px;
+  }
+
+  div.about-content--info {
+    h2 {
+      font-size: 30px;
+      margin-top: 20px;
+    }
+  }
+  div.about-content--title {
+    margin: 0 30px;
+  }
+
+  div.news-content--image {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80vh;
+    img:nth-child(1) {
+      opacity: 0;
+    }
+  }
+
+  div.about-content--title {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
   div.burger {
     display: block;
   }
@@ -35,60 +69,76 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
+  div.news-content--text {
+    height: 200px;
+    div.container-special {
+      h2 {
+        font-size: 32px;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  div.about-content--title__image {
+    img {
+      width: 80%;
+    }
+  }
+
+  div.about-content--info {
+    h2 {
+      font-size: 26px;
+    }
+  }
+
+  div.about-content--title__text {
+    font-size: 16px;
+  }
+  div.news-content--text {
+    height: 180px;
+    div.container-special {
+      h2 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
   div.header-content--image {
     img {
-      width: 200px;
-      height: auto;
+      height: 80%;
+      width: 80%;
     }
   }
 }
 
 @media (max-width: 300px) {
-  div.header-content--image {
-    img {
-      width: 150px;
-      height: auto;
+  div.about-content--info {
+    h2 {
+      font-size: 23px;
     }
+  }
+  div.about-content--title {
+    margin-top: -60px;
   }
   nav.header-content--navigation {
     a {
       font-size: 18px;
     }
-  }
-}
-
-@media (max-width: 810px) {
-  div.news-content--text {
-    position: relative;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 10px;
-  }
-  .container-special {
-    position: absolute;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    padding: 10px !important;
-
-    h2 {
-      font-size: 48px !important;
-    }
-    h3 {
-      font-size: 22px !important;
-    }
-    p {
-      font-size: 24px !important;
-    }
-  }
-  div.news-content--image {
-    position: absolute;
-    top: 170%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../images//ship-img.png");
   }
 }

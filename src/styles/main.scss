@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-@import "media";
+@import "media.scss";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 // === Common ===
 * {
@@ -96,12 +98,16 @@ $fw-dark: 900;
 // === / Navigation ===
 
 // === News ===
+
 .news {
+  position: relative;
+  min-height: 100vh;
   &-content {
     display: flex;
     position: relative;
     width: 100%;
     margin: 0 auto;
+
     &--text {
       position: absolute;
       top: 30px;
@@ -114,7 +120,7 @@ $fw-dark: 900;
       .container-special {
         max-width: 60%;
         margin: 0 auto;
-        padding: 70px 0px;
+        padding: 50px 0px;
         line-height: 1;
         h2 {
           font-size: 63px;
@@ -140,10 +146,72 @@ $fw-dark: 900;
       }
     }
     &--image {
-      position: absolute;
-      top: 0;
-      right: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
     }
   }
 }
 // === / News ===
+
+// === About ===
+.about {
+  padding-top: 20px;
+  position: relative;
+  height: 100vh;
+}
+
+.about-content--title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  &__text {
+    flex-basis: 100%;
+    font-size: 20px;
+    font-size: $fw-regular;
+  }
+  &__image {
+    flex-basis: 40%;
+  }
+}
+
+.about-content--info {
+  h2 {
+    font-size: 48px;
+    font-weight: $fw-bold;
+    color: $cl-blue;
+    margin-bottom: 60px;
+  }
+}
+
+.slider-item {
+  width: 367px;
+  height: 400px;
+  max-width: 90%;
+  margin-left: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+  &__text {
+    padding: 15px 77px 40px 15px;
+    label {
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: $fw-regular;
+      line-height: 1.4;
+    }
+  }
+}
+
+.slick-list {
+  padding-bottom: 30px;
+}
+// === / About===
