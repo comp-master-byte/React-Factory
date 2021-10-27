@@ -3,6 +3,7 @@ import './styles/main.scss'
 import { Navigation } from './components/Navigation';
 import { News } from './pages/News';
 import About from './pages/About';
+import Workers from './pages/Workers';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navigation/>
       <News/>
       <About/>
+      <Workers/>
     </>
   );
 }

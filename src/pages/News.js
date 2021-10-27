@@ -9,7 +9,7 @@ export const News = () => {
             <div className="news-content">
                 <div className="news-content--text">
                     <div className="container-special">
-                        <div className="flex">
+                       <div className="flex">
                             <h2>500</h2>
                             <p>Кораблей и судов</p>
                         </div>

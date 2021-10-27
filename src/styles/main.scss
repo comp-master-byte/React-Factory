@@ -156,7 +156,6 @@ $fw-dark: 900;
 
 // === About ===
 .about {
-  padding-top: 20px;
   position: relative;
   height: 100vh;
 }
@@ -215,3 +214,73 @@ $fw-dark: 900;
   padding-bottom: 30px;
 }
 // === / About===
+
+// === Workers ===
+.worker {
+  padding-top: 20px;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 200px;
+
+  &-content {
+    h2 {
+      color: $cl-blue;
+      font-size: 48px;
+      font-weight: $fw-bold;
+      margin-bottom: 20px;
+    }
+
+  }
+}
+
+.worker-content--element {
+  background-image: url('../images/worker-bg.png');
+  width: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.slider-worker {
+  min-width: 267px;
+  height: 626px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  
+  &--text {
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+    background-color: #fff;
+    height: 326px;
+    h4 {
+      color: $cl-blue;
+      font-size: 22px;
+      font-weight: $fw-semibold;
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: #000;
+      font-size: 16px;
+      font-weight: $fw-regular;
+
+      &:last-child {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+.slider-worker--image {
+  height: 300px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.slick-slider {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+// === / Workers ===
