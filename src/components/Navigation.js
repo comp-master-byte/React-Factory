@@ -7,6 +7,7 @@ export const Navigation = () => {
     function showNavigation() {
         document.querySelector('.header-content--navigation').classList.toggle('show')
         document.querySelector('body').classList.toggle('body')
+        document.querySelector('.burger').classList.toggle('spin')
     }
 
     function removeToggle() {
@@ -22,20 +23,37 @@ export const Navigation = () => {
         })
     }
     
-    
     useEffect(() => {
+        const refScroll1 = document.querySelector('.link1')
         const refScroll2 = document.querySelector('.link2')
         const refScroll3 = document.querySelector('.link3')
+        const refScroll4 = document.querySelector('.link4')
+        const refScroll5 = document.querySelector('.link5')
 
         const firstPage = document.querySelector('.about')
         const secondPage = document.querySelector('.worker')
+        const thirdPage = document.querySelector('.event')
+        const fourPage = document.querySelector('.partners')
+        const fifthPage = document.querySelector('.stata')
 
-        refScroll2.addEventListener('click', function() {
+        refScroll1.addEventListener('click', function() {
             scrollTo(firstPage)
         })
 
-        refScroll3.addEventListener('click', function() {
+        refScroll2.addEventListener('click', function() {
             scrollTo(secondPage)
+        })
+
+        refScroll3.addEventListener('click', function(){
+            scrollTo(thirdPage)
+        })
+
+        refScroll4.addEventListener('click', function() {
+            scrollTo(fourPage)
+        })
+
+        refScroll5.addEventListener('click', function() {
+            scrollTo(fifthPage)
         })
     }, [])
 
