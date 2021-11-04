@@ -10,6 +10,7 @@ import worker1 from '../images/worker-1.png'
 import worker2 from '../images/worker-2.png'
 import worker3 from '../images/worker-3.png'
 import person from '../images/person.png'
+import minilogo from '../images/minilogo.png'
 
 export const Images = [
     {image: logo},
@@ -23,5 +24,6 @@ export const Images = [
     {image: worker3},
     {image: lastSlider},
     {image: lastBg},
-    {image: person}
+    {image: person},
+    {image: minilogo}
 ]

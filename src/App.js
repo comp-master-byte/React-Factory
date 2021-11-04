@@ -7,6 +7,7 @@ import About from './pages/About';
 import Workers from './pages/Workers';
 import { Partners } from './pages/Partners';
 import { Stata } from './pages/Stata';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Event/>
       <Partners/>
       <Stata/>
+      <Footer/>
     </>
   );
 }

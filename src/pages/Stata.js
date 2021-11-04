@@ -17,17 +17,17 @@ export const Stata = () => {
                     </div>
                     )
                 })}
-                <div className="stata-grid--image">
-                    <img src={map} alt="" />
-                </div>
-                <div className="stata-grid--delivery">
-                    <hr />
-                    <h3>Мы поставляем
-                        свою продукцию
-                        более чем в</h3>
-                    <b>40</b>
-                    <p>стран мира</p>
-                </div>
+                    <div className="stata-grid--image">
+                        <img src={map} alt="" />
+                    </div>
+                    <div className="stata-grid--delivery">
+                        <hr />
+                        <h3>Мы поставляем
+                            свою продукцию
+                            более чем в</h3>
+                        <b>40</b>
+                        <p>стран мира</p>
+                    </div>
                 </div>
             </div>
         </div>
